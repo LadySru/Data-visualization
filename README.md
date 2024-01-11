@@ -1,40 +1,92 @@
-# Project Title
 
-This project is focused on data analysis and visualization using Python.
 
-## Project Description
 
-The aim of this project is to collect, clean, and analyze a large dataset using Python and present the findings in a compelling way using data visualization tools like Matplotlib or ggplot2. The project is designed to demonstrate proficiency in data manipulation and analysis, as well as the ability to communicate insights through visual storytelling.
+COVID-19 🦠 API😷
+GitHub license  GitHub top language GitHub top language
 
-## Table of Contents
+A GraphQL Express Server powered by @covid19india/api to provide COVID-19 related stats for India 🇮🇳
+COVID-19 Tracker ღ Dashboard
 
-- Installation
-- Usage
-- Credits
-- License
 
-## Installation
 
-1. Clone the repository to your local machine using `git clone https://github.com/GitProSolutions/Data-visualization-project.git`
-2. Install the required packages using `pip install -r requirements.txt`
-3. Open the project in Jupyter Notebook or your preferred IDE.
 
-## Usage
+COVID-19 Tracker | India - Get real-time state wise stats of COVID-19 in India | Product Hunt Embed
 
-1. Load your data into the project using `pd.read_csv()` or other data import methods.
-2. Clean the data by removing any missing values or duplicates using `df.dropna()` and `df.drop_duplicates()`.
-3. Manipulate and analyze the data as needed, using `groupby()`, `agg()`, and other Pandas functions.
-4. Visualize the data using Matplotlib, ggplot2, or other data visualization libraries.
-5. Save and share your visualizations as needed.
+Setup
+npm install && npm start
+Steps Explained
+Open terminal and run npm install
 
-## Credits
+Run npm start
 
-This project was created by GitProSolutions. The data used in the project was general.
+Open browser and go to http://localhost:8080/graphql
 
-## License
+Type the queries and enjoy! 😄
 
-This project is licensed under the MIT License. See LICENSE file for more details.
+Run npm run server for local development
 
-## Badges
+Queries
+GET overall COVID-19 stats
+{ 
+  total {
+    active
+    confirmed
+    deaths
+    recovered
+  }
+}
+GET statewise COVID-19 stats
+{
+  statewise {
+    state
+    active
+    confirmed
+    deaths
+    recovered
+  }
+}
+GET datewise COVID-19 stats
+{
+  datewise {
+    date
+    dailyconfirmed
+    dailydeceased
+    dailyrecovered
+  }
+}
+Dependencies Used
+express: A web application framework for Node.js
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+graphql: The JavaScript reference implementation for GraphQL
+
+express-graphql: A GraphQL HTTP Server middleware
+
+Related Work
+COVID-19 Tracker - INDIA - A React App with the following features:
+
+Graphs showing daily confirmed, recovered and deceased cases
+State-wise report presented in Map of India
+Tabular data for global corona cases
+Latest news about COVID-19
+Additional resources such as symptoms, precautions etc.
+India Fights Corona - Get current COVID-19 stats!
+
+COVID-19 Tracker - Homepage
+
+An Open Letter to all the contributors - STAY HOME, STAY SAFE!
+
+License
+FOSSA Status
+
+< /> with ♡ by
+
+
+
+Open Source Love
+
+Leave a ⭐
+repository. Consider leaving a star! ❤️ 🤗
+
+if (_.isAwesome(thisRepo)) {
+  thisRepo.star(); // thanks in advance :p
+}
